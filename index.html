@@ -1,12 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talent Gator</title>
-    <link href="index.css" type="text/css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TalentGator | Executive search &amp; specialist recruitment</title>
+    <meta name="description" content="TalentGator finds, approaches and secures the people who shape your business.">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Talent Gator</h1>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Header + hero -->
+    <div class="dark" id="top">
+      <header class="site-header container">
+        <a href="#top" class="logo" aria-label="TalentGator home">
+          <!-- Inline so it picks up the accent colour and web font. Standalone copy: assets/logo.svg -->
+          <svg aria-hidden="true" width="198" height="50" viewBox="0 0 260 66">
+            <path class="logo-shape" d="M0 18 L65 3 L160 3 L260 18 L160 33 L158 33 L148 63 L133 33 L95 33 L80 65 L70 33 L65 33 Z"/>
+            <text class="logo-text" x="112" y="23.5" text-anchor="middle">TALENTGATOR</text>
+          </svg>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+          <a href="#services">Services</a>
+          <a href="#process">How we work</a>
+          <a href="#sectors">Sectors</a>
+          <a href="#candidates">For candidates</a>
+          <a href="#contact" class="btn btn-accent btn-sm">Start a search</a>
+        </nav>
+      </header>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="kicker">Executive search &amp; specialist recruitment</p>
+          <h1>We hunt down the talent others miss.</h1>
+          <p class="lead">TalentGator finds, approaches and secures the people who shape your business — patiently, discreetly, and with a firm grip on the details.</p>
+          <div class="btn-row">
+            <a href="#contact" class="btn btn-accent">Hire with us</a>
+            <a href="#candidates" class="btn btn-outline">I'm looking for a role</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="placeholder hero-photo">[HERO PHOTO – team or candidate portrait]</div>
+          <dl class="stats">
+            <div class="stat">
+              <dt>placements made</dt>
+              <dd>[XX]+</dd>
+            </div>
+            <div class="stat">
+              <dt>retained after 1 year</dt>
+              <dd>[XX]%</dd>
+            </div>
+            <div class="stat">
+              <dt>average shortlist</dt>
+              <dd>[XX] days</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </div>
+    <main id="main">
+      <!-- Client logos -->
+      <section class="clients" aria-label="Clients">
+        <div class="container clients-inner">
+          <p>Trusted by teams at</p>
+          <ul class="logo-list">
+            <li class="placeholder-chip">[CLIENT LOGO]</li>
+            <li class="placeholder-chip">[CLIENT LOGO]</li>
+            <li class="placeholder-chip">[CLIENT LOGO]</li>
+            <li class="placeholder-chip">[CLIENT LOGO]</li>
+            <li class="placeholder-chip">[CLIENT LOGO]</li>
+          </ul>
+        </div>
+      </section>
+      <!-- Services -->
+      <section id="services" class="section container">
+        <div class="section-head">
+          <h2>Three ways we sink our teeth in.</h2>
+          <p>Whether you need one leader or a whole new team, we tailor the hunt to the role.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" class="icon">
+              <circle cx="11" cy="11" r="7"/>
+              <path d="M21 21l-4.3-4.3"/>
+            </svg>
+            <h3>Executive Search</h3>
+            <p>Retained, research-led search for C-suite, board and senior leadership appointments.</p>
+            <a href="#contact">Learn more →</a>
+          </article>
+          <article class="card">
+            <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" class="icon">
+              <circle cx="9" cy="8" r="3.5"/>
+              <path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/>
+              <circle cx="17.5" cy="9" r="2.5"/>
+              <path d="M17 14c2.6.2 4.5 2.3 4.5 5"/>
+            </svg>
+            <h3>Specialist Recruitment</h3>
+            <p>Hard-to-fill technical and niche roles, from single hires to scaling an entire function.</p>
+            <a href="#contact">Learn more →</a>
+          </article>
+          <article class="card">
+            <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" class="icon">
+              <path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/>
+              <path d="M9 3v15M15 6v15"/>
+            </svg>
+            <h3>Talent Mapping</h3>
+            <p>Market intelligence on who's out there, what they earn and what it takes to move them.</p>
+            <a href="#contact">Learn more →</a>
+          </article>
+        </div>
+      </section>
+      <!-- Process -->
+      <section id="process" class="dark">
+        <div class="section container">
+          <div class="section-head stacked">
+            <p class="kicker">How we work</p>
+            <h2>Patient in the water. Decisive when it counts.</h2>
+          </div>
+          <ol class="steps">
+            <li>
+              <span class="step-num">01</span>
+              <h3>Brief</h3>
+              <p>We get under the skin of the role, the team and the culture before we search.</p>
+            </li>
+            <li>
+              <span class="step-num">02</span>
+              <h3>Hunt</h3>
+              <p>Targeted research and direct approaches to people who aren't on the job boards.</p>
+            </li>
+            <li>
+              <span class="step-num">03</span>
+              <h3>Shortlist</h3>
+              <p>A tight, fully assessed shortlist — with honest notes on every candidate.</p>
+            </li>
+            <li>
+              <span class="step-num">04</span>
+              <h3>Secure</h3>
+              <p>We manage offers, negotiation and onboarding so the right person actually starts.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- Sectors + testimonial -->
+      <section id="sectors" class="section container split">
+        <div>
+          <h2>Sectors we know inside out</h2>
+          <ul class="pills">
+            <li>Technology</li>
+            <li>Finance</li>
+            <li>Healthcare</li>
+            <li>Engineering</li>
+            <li>Consumer &amp; Retail</li>
+            <li>[SECTOR]</li>
+          </ul>
+        </div>
+        <figure class="testimonial">
+          <svg aria-hidden="true" width="36" height="28" viewBox="0 0 36 28">
+            <path d="M0 28V16C0 7 5 1.5 14 0l1.5 4C10 6 8 9.5 8 14h7v14zm21 0V16c0-9 5-14.5 14-16l1 4c-5.5 2-7.5 5.5-7.5 10H36v14z"/>
+          </svg>
+          <blockquote>[CLIENT TESTIMONIAL – a short quote about a successful placement.]</blockquote>
+          <figcaption><strong>[Name]</strong>, [Title], [Company]</figcaption>
+        </figure>
+      </section>
+      <!-- Candidates -->
+      <section id="candidates" class="container candidates-wrap">
+        <div class="candidates">
+          <div>
+            <h2>Looking for your next move?</h2>
+            <p>Register with us confidentially and we'll reach out when the right opportunity surfaces.</p>
+          </div>
+          <a href="#contact" class="btn btn-dark">Submit your CV</a>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact" class="dark">
+        <div class="section container split">
+          <div class="contact-copy">
+            <h2 class="display">Got a role that needs filling?</h2>
+            <p class="lead">Tell us a little about it and a consultant will be in touch within one working day.</p>
+            <address>
+              <span>[EMAIL ADDRESS]</span>
+              <span>[PHONE NUMBER]</span>
+              <span>[OFFICE ADDRESS]</span>
+            </address>
+          </div>
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <label>Name<input type="text" name="name" autocomplete="name" required></label>
+              <label>Company<input type="text" name="company" autocomplete="organization"></label>
+            </div>
+            <label>Work email<input type="email" name="email" autocomplete="email" required></label>
+            <label>About the role<textarea name="message" rows="4"></textarea></label>
+            <button type="submit" class="btn btn-accent">Send enquiry</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="dark site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year">2026</span> TalentGator. All rights reserved.</span>
+        <nav aria-label="Footer">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
