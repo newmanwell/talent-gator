@@ -292,5 +292,3 @@ a:hover { color: #3A4A40; }
 .footer-inner nav { display: flex; flex-wrap: wrap; gap: 24px; }
 .footer-inner a { color: var(--muted-on-dark-2); }
 .footer-inner a:hover { color: var(--text-on-dark); }
- 
-Claude finished the response
