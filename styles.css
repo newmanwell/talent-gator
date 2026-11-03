@@ -375,15 +375,15 @@ a:hover {
   margin: 0;
   padding: 0;
 }
-.placeholder-chip {
-  min-width: 120px;
-  height: 40px;
+.client-logo {
+  min-width: 90px;
+  height: 90px;
   border-radius: 8px;
   background: var(--mist-2);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding-inline: 12px;
+  /* padding-inline: 12px; */
   font-size: 13px;
   color: var(--muted);
 }
